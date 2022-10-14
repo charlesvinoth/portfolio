@@ -39,7 +39,7 @@ const projects = [
     id: 4,
     name: "Safecheckin",
     description:
-      "SafeCheckin is a SaaS solution for the HR technology industry. It addresses common issues such as employee onboarding, flexible scheduling, micro-interaction, feedback gathering, employee self-service and happiness monitoring.",
+      "SafeCheckin is a SaaS solution for employee onboarding, interview scheduling, feedback gathering, etc.",
     roles: [],
     technologies: [],
     link: "",
@@ -86,9 +86,9 @@ const projects = [
   },
   {
     id: 9,
-    name: "Protask",
+    name: "Safecheckin Mobile",
     description:
-      "Protask is a digital platform that helps individuals and teams manage their tasks.",
+      "Safecheckin Mobile is the mobile version of the Safecheckin web app.",
     roles: [],
     technologies: [],
     link: "",
@@ -96,9 +96,9 @@ const projects = [
   },
   {
     id: 10,
-    name: "Safecheckin Mobile",
+    name: "Miscellaneous",
     description:
-      "Safecheckin Mobile is the mobile version of the Safecheckin web app.",
+      "Screenshots from various applications and prototypes that I worked.",
     roles: [],
     technologies: [],
     link: "",
@@ -128,15 +128,20 @@ const otherProjects = projects.slice(3);
 
     <ProjectCard :project="projects[2]" class="mb-20" />
 
-    <h2 class="text-xl font-semibold mb-10 capitalize text-center">
-      some noteworthy projects
-    </h2>
+    <div class="mb-12 relative border-b border-slate-200 dark:border-slate-800">
+      <div
+        class="absolute top-[-10px] text-sm font-medium capitalize text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-900 px-4"
+        style="left: calc(50% - 106px)"
+      >
+        other noteworthy projects
+      </div>
+    </div>
 
-    <div class="flex flex-wrap gap-4 xl:gap-6">
+    <div class="flex flex-wrap gap-x-4 gap-y-8 xl:gap-x-6 xl:gap-y-12">
       <div
         v-for="project in otherProjects"
         :key="project.id"
-        class="w-full md:w-1/3 xl:w-1/4 md:max-w-[50%] xl:max-w-[30%] grow"
+        class="w-full md:w-1/3 md:max-w-[50%] xl:w-1/4 xl:max-w-[32.26%] grow"
       >
         <ProjectTile :project="project" />
       </div>

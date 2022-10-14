@@ -17,7 +17,7 @@ const props = defineProps({
 
 <template>
   <div class="flex flex-col items-center md:items-start">
-    <h2 class="text-xl font-bold mb-5">{{ props.name }}</h2>
+    <h2 class="text-xl font-bold mb-3">{{ props.name }}</h2>
 
     <p
       class="text-slate-500 dark:text-slate-400 mb-10 text-center md:text-left"
