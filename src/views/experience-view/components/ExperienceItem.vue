@@ -107,8 +107,4 @@ const toggleRoles = () => emit("toggleRoles");
   </div>
 </template>
 
-<style>
-li::marker {
-  content: "▸ ";
-}
-</style>
+<style scoped></style>

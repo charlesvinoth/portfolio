@@ -125,11 +125,7 @@ const skills = {
 </script>
 
 <template>
-  <SectionWrapper
-    id="skills"
-    class="flex flex-col justify-center py-16"
-    style="min-height: calc(100vh - 88px)"
-  >
+  <SectionWrapper id="skills">
     <SectionTitle title="02. skills" />
 
     <SectionDescription>

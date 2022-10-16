@@ -72,11 +72,7 @@ const experiences = ref([
 </script>
 
 <template>
-  <SectionWrapper
-    id="experience"
-    class="flex flex-col justify-center py-16"
-    style="min-height: calc(100vh - 88px)"
-  >
+  <SectionWrapper id="experience">
     <SectionTitle title="03. experience" />
 
     <SectionDescription>

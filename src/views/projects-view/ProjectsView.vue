@@ -2,6 +2,7 @@
 import SectionWrapper from "@/components/section/SectionWrapper.vue";
 import SectionTitle from "@/components/section/SectionTitle.vue";
 import ProjectTile from "./components/ProjectTile.vue";
+import SectionDescription from "../../components/section/SectionDescription.vue";
 
 const projects = [
   {
@@ -12,15 +13,33 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 2,
     name: "ezofis Business",
     description: "SaaS platform for Document Management System (DMS).",
-    roles: [],
-    technologies: [],
+    roles: [
+      "Conceptualized, designed, and developed the entire front-end of the application",
+      "Write modern, performant, and robust code for a diverse array of client and internal projects",
+      "Interfaced with clients on a weekly basis, providing technological expertise and knowledge",
+      "Communicate and collaborate with multi-disciplinary teams of engineers, designers, producers, clients, and stakeholders on a daily basis",
+    ],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript (ES6+)",
+      "Vue.js",
+      "Quasar.js",
+      "Axios.js",
+      "Vuex",
+      "VueRouter",
+      "Vuelidate",
+      "Konva.js",
+    ],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 3,
@@ -30,6 +49,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 4,
@@ -39,6 +59,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 5,
@@ -48,6 +69,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 6,
@@ -57,6 +79,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 7,
@@ -67,6 +90,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 8,
@@ -76,6 +100,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 9,
@@ -85,6 +110,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 10,
@@ -94,6 +120,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 11,
@@ -103,6 +130,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
   {
     id: 12,
@@ -113,25 +141,22 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
+    screenshotsCount: 12,
   },
 ];
 </script>
 
 <template>
-  <SectionWrapper
-    id="projects"
-    class="flex flex-col py-16"
-    style="min-height: calc(100vh - 88px)"
-  >
+  <SectionWrapper id="projects">
     <SectionTitle title="04. projects" />
 
-    <p class="text-slate-500 dark:text-slate-400 mb-10">
-      We develop the best quality website that serves for the long-term.
-      Well-documented, clean, easy and elegant interface helps any non-technical
-      clients.
-    </p>
+    <SectionDescription>
+      I've worked on a handful of customer projects, personal projects and
+      prototypes over the past four years, which are well documented, clean,
+      user-friendly and scalable, regardless of the stack.
+    </SectionDescription>
 
-    <div class="flex flex-wrap gap-4 xl:gap-6">
+    <div class="flex flex-wrap gap-x-4 gap-y-12 xl:gap-x-6 xl:gap-y-18">
       <div
         v-for="project in projects"
         :key="project.id"

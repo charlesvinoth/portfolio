@@ -7,17 +7,21 @@ import NavigationMenu from "./components/NavigationMenu.vue";
 
 <template>
   <header
-    class="sticky top-0 left-0 z-10 px-6 py-6 xl:px-8 flex items-center justify-between bg-white dark:bg-slate-900"
+    class="sticky top-0 left-0 z-10 px-6 xl:px-8 bg-white dark:bg-slate-900"
   >
-    <Logo />
+    <div
+      class="py-6 flex items-center justify-between border-b border-slate-200 dark:border-slate-800"
+    >
+      <Logo />
 
-    <div class="grow"></div>
+      <div class="grow"></div>
 
-    <NavigationMenuXL class="hidden xl:flex" />
+      <NavigationMenuXL class="hidden xl:flex" />
 
-    <ThemeToggle class="ml-8" />
+      <ThemeToggle class="ml-8" />
 
-    <NavigationMenu class="ml-4 xl:hidden" />
+      <NavigationMenu class="ml-4 xl:hidden" />
+    </div>
   </header>
 </template>
 

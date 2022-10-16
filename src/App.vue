@@ -5,6 +5,7 @@ import SkillsView from "@/views/skills-view/SkillsView.vue";
 import ExperienceView from "@/views/experience-view/ExperienceView.vue";
 import ProjectsView from "@/views/projects-view/ProjectsView.vue";
 import ContactView from "@/views/contact-view/ContactView.vue";
+import PageFooter from "./components/PageFooter.vue";
 </script>
 
 <template>
@@ -21,6 +22,8 @@ import ContactView from "@/views/contact-view/ContactView.vue";
       <ProjectsView />
 
       <ContactView />
+
+      <PageFooter />
     </div>
   </div>
 </template>

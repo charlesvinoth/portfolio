@@ -2,6 +2,7 @@
 import SectionWrapper from "@/components/section/SectionWrapper.vue";
 import SectionTitle from "@/components/section/SectionTitle.vue";
 import ContactInfoItem from "./components/ContactInfoItem.vue";
+import SectionDescription from "../../components/section/SectionDescription.vue";
 
 const contactInfo = [
   {
@@ -28,17 +29,13 @@ const contactInfo = [
 </script>
 
 <template>
-  <SectionWrapper
-    id="contact"
-    class="flex flex-col justify-center py-16"
-    style="min-height: calc(100vh - 88px)"
-  >
+  <SectionWrapper id="contact" style="min-height: calc(100vh - 325px)">
     <SectionTitle title="05. contact" />
 
-    <p class="text-slate-500 dark:text-slate-400 mb-10">
+    <SectionDescription>
       Feel free to contact me. I'm always willing to discuss new projects,
       creative ideas, or opportunities to be part of your vision.
-    </p>
+    </SectionDescription>
 
     <div class="space-y-6">
       <ContactInfoItem

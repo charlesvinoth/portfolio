@@ -40,13 +40,6 @@ export const CloseIcon = () => {
   });
 };
 
-export const BulletIcon = () => {
-  return h(`svg`, {
-    viewBox: "0 0 24 24",
-    innerHTML: '<path fill="currentColor" d="M10,17L15,12L10,7V17Z"/>',
-  });
-};
-
 export const ExpandIcon = () => {
   return h(`svg`, {
     viewBox: "0 0 24 24",
@@ -62,11 +55,11 @@ export const CollapseIcon = () => {
   });
 };
 
-export const RightArrowIcon = () => {
+export const BackIcon = () => {
   return h(`svg`, {
     viewBox: "0 0 24 24",
     innerHTML:
-      '<path fill="currentColor" d="M14 16.94V12.94H5.08L5.05 10.93H14V6.94L19 11.94Z"/>',
+      '<path fill="currentColor" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"/>',
   });
 };
 
@@ -99,5 +92,19 @@ export const LocationIcon = () => {
     viewBox: "0 0 24 24",
     innerHTML:
       '<path fill="currentColor" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>',
+  });
+};
+
+export const PreviousIcon = () => {
+  return h(`svg`, {
+    viewBox: "0 0 24 24",
+    innerHTML: '<path fill="currentColor" d="M14,7L9,12L14,17V7Z"/>',
+  });
+};
+
+export const NextIcon = () => {
+  return h(`svg`, {
+    viewBox: "0 0 24 24",
+    innerHTML: '<path fill="currentColor" d="M10,17L15,12L10,7V17ZZ"/>',
   });
 };

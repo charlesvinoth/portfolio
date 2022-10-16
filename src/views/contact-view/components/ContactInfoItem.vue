@@ -33,7 +33,7 @@ const iconMap = {
       class="mr-6 h-6 w-6 text-secondary-500 dark:text-secondary-400"
     />
 
-    <div class="text-lg font-medium">
+    <div class="text-md font-medium">
       <a
         v-if="props.type === 'EMAIL'"
         :href="`mailto:${props.info}`"
