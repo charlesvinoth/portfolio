@@ -44,7 +44,7 @@ const showLightBox = (screenshotIdx) => {
       v-for="(screenshot, idx) in screenshots"
       :key="idx"
       class="w-full md:w-1/3 md:max-w-[50%] xl:w-1/4 grow cursor-pointer"
-      @click="showLightBox(idx + 1)"
+      @click="showLightBox(idx)"
     >
       <img
         :src="screenshot"

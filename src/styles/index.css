@@ -14,11 +14,21 @@
   --secondary: #4ddde1;
 }
 
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-  user-select: none;
+.vel-modal {
+  background-color: rgba(15, 23, 42, 0.7) !important;
+}
+
+.vel-btns-wrapper .btn__close,
+.vel-btns-wrapper .btn__prev,
+.vel-btns-wrapper .btn__next {
+  color: rgb(248, 250, 252) !important;
 }
