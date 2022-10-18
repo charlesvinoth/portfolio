@@ -13,7 +13,7 @@ const projects = [
     technologies: [],
     link: "",
     repository: "",
-    screenshotsCount: 12,
+    screenshotsCount: 34,
   },
   {
     id: 2,
