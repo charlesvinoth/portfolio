@@ -3,7 +3,6 @@ import BackButton from "./components/BackButton.vue";
 import SectionTitle from "@/components/section/SectionTitle.vue";
 import SectionDescription from "@/components/section/SectionDescription.vue";
 import Technologies from "./components/Technologies.vue";
-import Roles from "./components/Roles.vue";
 import Screenshots from "./components/Screenshots.vue";
 
 const emit = defineEmits(["update:modelValue"]);
@@ -32,11 +31,9 @@ const closeModal = () => emit("update:modelValue", false);
 
           <SectionTitle :title="props.project.name" class="mt-16" />
 
-          <SectionDescription>{{
-            props.project.description
+          <SectionDescription class="mb-16">{{
+            props.project.description.long
           }}</SectionDescription>
-
-          <Roles :roles="props.project.roles" class="mb-16" />
 
           <div
             class="capitalize font-semibold mb-6 text-secondary-500 dark:text-secondary-400"
@@ -58,6 +55,7 @@ const closeModal = () => emit("update:modelValue", false);
           <Screenshots
             :project-name="props.project.name"
             :screenshotsCount="props.project.screenshotsCount"
+            :project-type="props.project.type"
           />
         </div>
       </div>

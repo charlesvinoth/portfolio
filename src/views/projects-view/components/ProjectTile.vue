@@ -23,12 +23,12 @@ const coverImg = computed(
 watchEffect(() => {
   if (isModalVisible.value) {
     document.querySelector("#app").style.display = "none";
-    window.scrollTo(0, 0);
+    window.scrollTo({ top: 0, behavior: "auto" });
     return;
   }
 
   document.querySelector("#app").style.display = "initial";
-  window.scrollTo(0, offsetTop.value - 104);
+  window.scrollTo({ top: offsetTop.value - 104, behavior: "smooth" });
 }, [isModalVisible]);
 
 const showModal = (e) => {
@@ -52,7 +52,7 @@ const showModal = (e) => {
     </h2>
 
     <p class="text-sm text-slate-500 dark:text-slate-400">
-      {{ props.project.description }}
+      {{ props.project.description.short }}
     </p>
   </div>
 

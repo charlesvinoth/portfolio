@@ -12,6 +12,11 @@ const props = defineProps({
     type: Number,
     default: 0,
   },
+
+  projectType: {
+    type: String,
+    default: "WEB",
+  },
 });
 
 const isLightBoxVisible = ref(false);
@@ -39,11 +44,16 @@ const showLightBox = (screenshotIdx) => {
 </script>
 
 <template>
-  <div class="flex flex-wrap gap-4 xl:gap-6">
+  <div class="flex flex-wrap gap-4">
     <div
       v-for="(screenshot, idx) in screenshots"
       :key="idx"
-      class="w-full md:w-1/3 md:max-w-[50%] xl:w-1/4 grow cursor-pointer"
+      class="w-full grow cursor-pointer"
+      :class="[
+        projectType === 'MOBILE'
+          ? 'md:w-1/4 md:max-w-[32%] xl:w-1/6 xl:max-w-[19.1%]'
+          : 'md:w-1/3 md:max-w-[50%] xl:w-1/4 xl:max-w-[32.6%]',
+      ]"
       @click="showLightBox(idx)"
     >
       <img
