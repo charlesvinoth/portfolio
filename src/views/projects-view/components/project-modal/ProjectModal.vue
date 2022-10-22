@@ -35,22 +35,14 @@ const closeModal = () => emit("update:modelValue", false);
             props.project.description.long
           }}</SectionDescription>
 
-          <div
-            class="capitalize font-semibold mb-6 text-secondary-500 dark:text-secondary-400"
-          >
-            technologies used
-          </div>
+          <div class="capitalize font-bold mb-6">technologies used</div>
 
           <Technologies
             :technologies="props.project.technologies"
             class="mb-16"
           />
 
-          <div
-            class="capitalize font-semibold mb-6 text-secondary-500 dark:text-secondary-400"
-          >
-            screenshots
-          </div>
+          <div class="capitalize font-bold mb-6">screenshots</div>
 
           <Screenshots
             :project-name="props.project.name"

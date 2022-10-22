@@ -1,16 +1,23 @@
 <script setup>
-import { ref } from "vue";
+import { useMainStore } from "@/stores/main.js";
+import { ref, computed } from "vue";
 import { MenuIcon, CloseIcon } from "@/components/Icons";
 
 // data
 
+const store = useMainStore();
 const menus = ["home", "skills", "experience", "projects", "contact"];
 const showMenus = ref(false);
+
+// computed
+
+const activeMenu = computed(() => store.activeMenu);
 
 // methods
 
 const toggleMenus = () => (showMenus.value = !showMenus.value);
 const setActiveMenu = (menu) => {
+  store.setActiveMenu(menu);
   showMenus.value = false;
   const section = document.getElementById(menu);
   const offsetTop = section.offsetTop;
@@ -35,22 +42,22 @@ const setActiveMenu = (menu) => {
         <div class="container mx-auto px-6 py-8 xl:px-8">
           <nav class="flex flex-col gap-8 relative">
             <div
-              v-for="(menu, idx) in menus"
+              v-for="menu in menus"
               :key="menu"
               class="relative cursor-pointer capitalize font-semibold text-sm"
               @click="setActiveMenu(menu)"
             >
               <!-- menu -->
 
-              <div>
-                <span class="text-secondary-500 dark:text-secondary-400">
-                  0{{ idx + 1 }}.
-                </span>
-                <span
-                  class="ml-1 text-slate-500 dark:text-slate-400 group-hover:text-secondary-500 dark:group-hover:text-secondary-400"
-                >
-                  {{ menu }}
-                </span>
+              <div
+                class="group-hover:text-secondary-500 dark:group-hover:text-secondary-400"
+                :class="[
+                  activeMenu === menu
+                    ? 'text-secondary-500 dark:text-secondary-400'
+                    : 'text-slate-500 dark:text-slate-400',
+                ]"
+              >
+                {{ menu }}
               </div>
 
               <!-- ... -->

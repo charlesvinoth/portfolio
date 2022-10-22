@@ -12,7 +12,7 @@ const props = defineProps({
     <div
       v-for="technology in props.technologies"
       :key="technology"
-      class="px-6 py-2 rounded border bg-slate-100 border-slate-200 dark:bg-slate-800 dark:border-slate-700 font-medium"
+      class="px-6 py-2 rounded bg-secondary-600/10 text-secondary-600 dark:bg-secondary-400/10 dark:text-secondary-300 font-medium"
     >
       {{ technology }}
     </div>

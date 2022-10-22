@@ -72,6 +72,32 @@ const projects = [
     type: "MOBILE",
   },
   {
+    id: 10,
+    name: "ezofis Business v2 Prototype 1",
+    description: {
+      short: "Prototype v1 of the ezofis Business app.",
+      long: "Prototype v1 of the ezofis Business app.",
+    },
+    technologies: ["HTML", "CSS", "JavaScript (ES6+)", "Vue.js", "Quasar.js"],
+    link: "",
+    repository: "",
+    screenshotsCount: 24,
+    type: "WEB",
+  },
+  {
+    id: 11,
+    name: "ezofis Business v2 Prototype 2",
+    description: {
+      short: "Prototype v2 of the ezofis Business app.",
+      long: "Prototype v2 of the ezofis Business app.",
+    },
+    technologies: ["HTML", "CSS", "JavaScript (ES6+)", "Vue.js", "Quasar.js"],
+    link: "",
+    repository: "",
+    screenshotsCount: 32,
+    type: "WEB",
+  },
+  {
     id: 4,
     name: "Eterno Forms",
     description: {
@@ -98,10 +124,10 @@ const projects = [
       short: "eCommerce mobile app for cold pressed oils.",
       long: "",
     },
-    technologies: [],
+    technologies: ["Dart", "Flutter", "GetX", "Dio", "Material Design"],
     link: "",
     repository: "",
-    screenshotsCount: 0,
+    screenshotsCount: 13,
     type: "MOBILE",
   },
   {
@@ -115,72 +141,6 @@ const projects = [
     link: "",
     repository: "",
     screenshotsCount: 18,
-    type: "WEB",
-  },
-  {
-    id: 7,
-    name: "Safecheckin",
-    description: {
-      short:
-        "SaaS platform for employee onboarding, interview scheduling, etc.",
-      long: "",
-    },
-    technologies: [],
-    link: "",
-    repository: "",
-    screenshotsCount: 0,
-    type: "WEB",
-  },
-  {
-    id: 8,
-    name: "Safecheckin Mobile",
-    description: {
-      short: "Mobile version of the Safecheckin web app.",
-      long: "",
-    },
-    technologies: [],
-    link: "",
-    repository: "",
-    screenshotsCount: 0,
-    type: "MOBILE",
-  },
-  {
-    id: 9,
-    name: "Documently",
-    description: {
-      short: "SaaS platform for document gathering and client onboarding.",
-      long: "",
-    },
-    technologies: [],
-    link: "",
-    repository: "",
-    screenshotsCount: 0,
-    type: "WEB",
-  },
-  {
-    id: 10,
-    name: "ezofis Business v2 Prototype 1",
-    description: {
-      short: "SaaS platform for Document Management System (DMS).",
-      long: "",
-    },
-    technologies: [],
-    link: "",
-    repository: "",
-    screenshotsCount: 0,
-    type: "WEB",
-  },
-  {
-    id: 11,
-    name: "ezofis Business v2 Prototype 2",
-    description: {
-      short: "SaaS platform for Document Management System (DMS).",
-      long: "",
-    },
-    technologies: [],
-    link: "",
-    repository: "",
-    screenshotsCount: 0,
     type: "WEB",
   },
   {
@@ -202,7 +162,7 @@ const projects = [
 
 <template>
   <SectionWrapper id="projects">
-    <SectionTitle title="04. projects" />
+    <SectionTitle title="projects" />
 
     <SectionDescription>
       I've worked on a handful of customer projects, personal projects and

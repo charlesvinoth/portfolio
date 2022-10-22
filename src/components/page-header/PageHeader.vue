@@ -18,7 +18,7 @@ import NavigationMenu from "./components/NavigationMenu.vue";
 
       <NavigationMenuXL class="hidden xl:flex" />
 
-      <ThemeToggle class="ml-8" />
+      <ThemeToggle class="ml-12" />
 
       <NavigationMenu class="ml-4 xl:hidden" />
     </div>

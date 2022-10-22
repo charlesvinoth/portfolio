@@ -30,7 +30,7 @@ const contactInfo = [
 
 <template>
   <SectionWrapper id="contact" style="min-height: calc(100vh - 325px)">
-    <SectionTitle title="05. contact" />
+    <SectionTitle title="contact" />
 
     <SectionDescription>
       Feel free to contact me. I'm always willing to discuss new projects,
