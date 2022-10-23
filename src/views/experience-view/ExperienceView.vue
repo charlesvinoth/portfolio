@@ -12,10 +12,10 @@ const experiences = ref([
     company: "ezofis",
     period: "sep 2021 - present",
     roles: [
-      "Designed and built modern, scalable, responsive, distributed cloud-based applications using HTML, CSS, Sass, JavaScript, TypeScript, Vue.js, Vuex, VueRouter, Quasar.js, Vite.js, Vue Composition API, Vue CLI, etc.",
-      "Designed and developed Dashboard and Report pages using JavaScript data visualization libraries like D3.js, Chart.js, ApexCharts.js, and HighCharts.js.",
+      "Designed and built modern, scalable, responsive, distributed cloud-based applications using HTML, CSS, Sass, JavaScript, TypeScript, Vue.js, Vuex, VueRouter, Quasar.js, etc.",
       "Delivered complex UX/UI components without compromising quality and speed.",
-      "Led a team of 2 developers through building multiple Vue.js and React.js applications. ",
+      "Designed and developed Dashboard and Report pages using JavaScript data visualization libraries like D3.js, Chart.js, ApexCharts.js, and HighCharts.js.",
+      "Led a team of 2 developers through building multiple Vue.js and React.js applications.",
       "Built and shipped robust apps to Android/iOS devices using Dart and Flutter.",
       "Experienced in working with IIS web servers, Netlify and Azure, and Firebase.",
       "Introduced and used Postman to create, share, test, and document APIs.",

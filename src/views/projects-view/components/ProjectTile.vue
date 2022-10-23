@@ -1,6 +1,7 @@
 <script setup>
 import { ref, computed, watchEffect } from "vue";
 import ProjectModal from "./project-modal/ProjectModal.vue";
+import { RightIcon } from "@/components/Icons";
 
 const props = defineProps({
   project: {
@@ -38,22 +39,35 @@ const showModal = (e) => {
 </script>
 
 <template>
-  <div class="group cursor-pointer text-center" @click="showModal">
+  <div
+    class="h-full rounded border border-slate-200 dark:border-slate-700 group cursor-pointer"
+    @click="showModal"
+  >
     <img
       :src="coverImg"
       :alt="props.project.name"
-      class="p-3 bg-slate-100 dark:bg-slate-800"
+      class="p-4 bg-slate-200 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700"
     />
 
-    <h2
-      class="text-md font-semibold mt-6 mb-1 group-hover:underline group-hover:text-secondary-500 dark:group-hover:text-secondary-400"
-    >
-      {{ props.project.name }}
-    </h2>
+    <div class="px-4 py-6 flex items-center justify-between gap-10">
+      <div>
+        <h2 class="text-md font-bold mb-1">
+          {{ props.project.name }}
+        </h2>
 
-    <p class="text-sm text-slate-500 dark:text-slate-400">
-      {{ props.project.description.short }}
-    </p>
+        <p class="text-sm text-slate-500 dark:text-slate-400">
+          {{ props.project.description.short }}
+        </p>
+      </div>
+
+      <div
+        class="flex items-center justify-center h-9 w-9 bg-slate-100 dark:bg-slate-800 rounded-full group-hover:bg-secondary-500 dark:group-hover:bg-secondary-400"
+      >
+        <RightIcon
+          class="h-5 w-5 min-w-[36px] text-slate-500 dark:text-slate-300 group-hover:text-white"
+        />
+      </div>
+    </div>
   </div>
 
   <ProjectModal v-model="isModalVisible" :project="props.project" />

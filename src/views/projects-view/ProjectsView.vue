@@ -9,7 +9,7 @@ const projects = [
     id: 1,
     name: "ezofis Enterprise",
     description: {
-      short: "SaaS platform for Enterprise Content Management (ECM).",
+      short: "SaaS platform for Enterprise Content Management.",
       long: "ezofis Enterprise is a SaaS platform for Enterprise Content Management (ECM). Enterprise content management (ECM) — sometimes referred to as document management or records management — is the process of managing the entire lifecycle of an organization's content, including documents, spreadsheets, contracts and scanned images. The goal of an ECM solution is to reduce risk and improve productivity, efficiency and customer experience by eliminating paper-based tasks and enhancing process visibility.",
     },
     technologies: [
@@ -37,7 +37,7 @@ const projects = [
     id: 2,
     name: "ezofis Business",
     description: {
-      short: "SaaS platform for Document Management System (DMS).",
+      short: "SaaS platform for Document Management System.",
       long: "ezofis Business is a SaaS platform for Document Management System (DMS). A document management system (DMS) is a software solution that enables an organization to automate the creation, storage, tracking and retrieval of its electronic documents within a single database platform. It's designed to maximize the efficient modification, digitization, filing and accessing of documents and images. DMS is the less advanced version of enterprise content management (ECM).",
     },
     technologies: [
@@ -122,7 +122,7 @@ const projects = [
     name: "Sathiyam Oils",
     description: {
       short: "eCommerce mobile app for cold pressed oils.",
-      long: "",
+      long: "eCommerce mobile app for cold pressed oils.",
     },
     technologies: ["Dart", "Flutter", "GetX", "Dio", "Material Design"],
     link: "",
@@ -147,8 +147,7 @@ const projects = [
     id: 12,
     name: "Miscellaneous",
     description: {
-      short:
-        "Screenshots from various applications and prototypes that I worked.",
+      short: "Screenshots from various applications and prototypes.",
       long: "",
     },
     technologies: [],
@@ -170,7 +169,7 @@ const projects = [
       user-friendly and scalable, regardless of the stack.
     </SectionDescription>
 
-    <div class="flex flex-wrap gap-x-4 gap-y-12 xl:gap-x-6 xl:gap-y-18">
+    <div class="flex flex-wrap gap-6">
       <div
         v-for="project in projects"
         :key="project.id"

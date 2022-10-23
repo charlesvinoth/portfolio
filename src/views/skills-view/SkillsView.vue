@@ -129,12 +129,12 @@ const skills = {
     <SectionTitle title="skills" />
 
     <SectionDescription>
-      I develop a simple, intuitive, and responsive UI that allows users to do
-      things with less effort and time with cutting-edge technologies.
+      I develop a simple, intuitive, and responsive UI with cutting-edge
+      technologies that allows users to do things with less effort and time.
     </SectionDescription>
 
     <template v-for="(value, key) in skills" :key="key">
-      <div class="capitalize font-bold text-sm mb-6">{{ key }}</div>
+      <div class="capitalize font-bold mb-6">{{ key }}</div>
 
       <div class="flex flex-wrap items-center gap-4 mb-10">
         <SkillItem

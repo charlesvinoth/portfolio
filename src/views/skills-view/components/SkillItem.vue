@@ -26,7 +26,7 @@ const logo = computed(
       <img :src="logo" :alt="props.label" class="w-9 h-auto" />
     </div>
 
-    <div class="text-sm mt-2 text-slate-500 dark:text-slate-400">
+    <div class="text-sm mt-2">
       {{ props.label }}
     </div>
   </div>

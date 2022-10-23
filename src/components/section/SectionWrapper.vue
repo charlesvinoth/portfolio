@@ -13,7 +13,7 @@ onMounted(() => {
         }
       });
     },
-    { threshold: 0.35 }
+    { threshold: 0.25 }
   );
 
   observer.observe(document.getElementById("home"));

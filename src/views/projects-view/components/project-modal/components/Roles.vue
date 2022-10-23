@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
   <ul
-    class="space-y-2 list-disc list-inside marker:text-secondary-500 dark:marker:text-secondary-400"
+    class="space-y-2 list-disc list-inside marker:text-primary-500 dark:marker:text-primary-500"
   >
     <li v-for="role in props.roles" :key="role">
       {{ role }}

@@ -41,7 +41,7 @@ const toggleRoles = () => emit("toggleRoles");
   <div
     class="pb-6 mb-6 border-b last:border-b-0 border-slate-200 dark:border-slate-800"
   >
-    <h2 class="text-base md:text-md relative pl-12">
+    <h2 class="text-lg md:text-md relative pl-12">
       <!-- toggle -->
 
       <div
@@ -51,7 +51,7 @@ const toggleRoles = () => emit("toggleRoles");
           class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center cursor-pointer"
           @click="toggleRoles"
         >
-          <div class="w-4 h-4 text-secondary-500 dark:text-secondary-400">
+          <div class="w-4 h-4 text-secondary-500 dark:text-secondary-500">
             <ExpandIcon v-if="props.isCollapsed" />
             <CollapseIcon v-else />
           </div>
@@ -70,7 +70,7 @@ const toggleRoles = () => emit("toggleRoles");
 
       <!-- company -->
 
-      <span class="font-semibold text-secondary-500 dark:text-secondary-300">
+      <span class="font-semibold text-secondary-500 dark:text-secondary-400">
         @ {{ props.company }}
       </span>
 
@@ -91,11 +91,11 @@ const toggleRoles = () => emit("toggleRoles");
 
     <div
       class="overflow-hidden transition-[height] duration-300 ease-in-out"
-      :style="{ height: props.isCollapsed ? '0px' : `${rolesHeight + 24}px` }"
+      :style="{ height: props.isCollapsed ? '0px' : `${rolesHeight + 32}px` }"
     >
       <ul
         ref="rolesRef"
-        class="mt-6 space-y-2 pl-12 list-disc list-inside marker:text-secondary-500 dark:marker:text-secondary-400"
+        class="mt-8 space-y-3 pl-12 list-disc list-inside marker:text-secondary-500 dark:marker:text-secondary-500 "
       >
         <li v-for="role in props.roles" :key="role">
           {{ role }}

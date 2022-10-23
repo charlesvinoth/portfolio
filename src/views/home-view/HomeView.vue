@@ -1,8 +1,8 @@
 <script setup>
 import SectionWrapper from "@/components/section/SectionWrapper.vue";
-import Name from "./components/Name.vue";
+import SectionTitle from "@/components/section/SectionTitle.vue";
+import SectionDescription from "@/components/section/SectionDescription.vue";
 import Designation from "./components/Designation.vue";
-import Description from "./components/Description.vue";
 import { DownloadIcon } from "@/components/Icons";
 import Avatar from "./components/Avatar.vue";
 import Button from "@/components/Button.vue";
@@ -20,11 +20,20 @@ import Button from "@/components/Button.vue";
       </div>
 
       <div class="text-center xl:text-left">
-        <Name />
+        <SectionTitle
+          class="justify-center xl:justify-start !text-xl"
+          title="Hi, I'm Charles Vinoth."
+        />
 
         <Designation />
 
-        <Description />
+        <SectionDescription class="w-full xl:w-4/5">
+          Front-end developer with more than 4 years of experience designing and
+          developing responsive web and mobile applications. Proficient in HTML,
+          CSS, and JavaScript frameworks with a thorough understanding of UI and
+          UX. Notable accomplishments include an 80% increase in the sales of an
+          existing product through improved design and code.
+        </SectionDescription>
 
         <Button label="get resume">
           <DownloadIcon />

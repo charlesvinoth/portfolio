@@ -27,16 +27,16 @@ const setActiveMenu = (menu) => {
     <div
       v-for="menu in menus"
       :key="menu"
-      class="relative cursor-pointer capitalize group font-semibold text-sm"
+      class="relative cursor-pointer capitalize group font-medium"
       @click="setActiveMenu(menu)"
     >
       <!-- menu -->
 
       <div
-        class="group-hover:text-secondary-500 dark:group-hover:text-secondary-400"
+        class="group-hover:text-slate-900 dark:group-hover:text-slate-50"
         :class="[
           activeMenu === menu
-            ? 'text-secondary-500 dark:text-secondary-400'
+            ? 'text-secondary-500 dark:text-secondary-500'
             : 'text-slate-500 dark:text-slate-400',
         ]"
       >
