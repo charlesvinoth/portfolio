@@ -59,7 +59,7 @@ const showLightBox = (screenshotIdx) => {
       <img
         :src="screenshot"
         :alt="idx"
-        class="p-3 bg-slate-100 dark:bg-slate-800"
+        class="p-3 bg-gray-100 dark:bg-gray-800"
       />
     </div>
   </div>

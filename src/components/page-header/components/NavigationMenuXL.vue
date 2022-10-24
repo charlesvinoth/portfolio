@@ -33,11 +33,11 @@ const setActiveMenu = (menu) => {
       <!-- menu -->
 
       <div
-        class="group-hover:text-slate-900 dark:group-hover:text-slate-50"
+        class="group-hover:text-gray-900 dark:group-hover:text-gray-50"
         :class="[
           activeMenu === menu
             ? 'text-secondary-500 dark:text-secondary-500'
-            : 'text-slate-500 dark:text-slate-400',
+            : 'text-gray-500 dark:text-gray-400',
         ]"
       >
         {{ menu }}

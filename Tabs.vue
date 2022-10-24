@@ -42,8 +42,8 @@ const setActiveTab = (_tab, _tabIdx) => {
         class="capitalize"
         :class="[
           activeTab === tab
-            ? 'text-slate-800 font-semibold'
-            : 'text-slate-500 dark:text-slate-400',
+            ? 'text-gray-800 font-semibold'
+            : 'text-gray-500 dark:text-gray-400',
         ]"
       >
         {{ tab }}

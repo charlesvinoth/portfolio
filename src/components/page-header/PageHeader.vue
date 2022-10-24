@@ -7,10 +7,10 @@ import NavigationMenu from "./components/NavigationMenu.vue";
 
 <template>
   <header
-    class="sticky top-0 left-0 z-10 px-6 xl:px-8 bg-white dark:bg-slate-900"
+    class="sticky top-0 left-0 z-10 px-6 xl:px-8 bg-white dark:bg-gray-900"
   >
     <div
-      class="py-6 flex items-center justify-between border-b border-slate-200 dark:border-slate-800"
+      class="py-6 flex items-center justify-between border-b border-gray-200 dark:border-gray-800"
     >
       <Logo />
 

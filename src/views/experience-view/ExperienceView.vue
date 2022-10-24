@@ -77,7 +77,7 @@ const experiences = ref([
 
 <template>
   <SectionWrapper id="experience">
-    <SectionTitle title="experience" />
+    <SectionTitle title="experience" class="text-indigo-500" />
 
     <SectionDescription>
       I have been developing sites and applications for four years and am

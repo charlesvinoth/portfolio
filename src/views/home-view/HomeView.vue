@@ -3,9 +3,8 @@ import SectionWrapper from "@/components/section/SectionWrapper.vue";
 import SectionTitle from "@/components/section/SectionTitle.vue";
 import SectionDescription from "@/components/section/SectionDescription.vue";
 import Designation from "./components/Designation.vue";
-import { DownloadIcon } from "@/components/Icons";
 import Avatar from "./components/Avatar.vue";
-import Button from "@/components/Button.vue";
+import CtaButton from "./components/CtaButton.vue";
 </script>
 
 <template>
@@ -35,14 +34,12 @@ import Button from "@/components/Button.vue";
           existing product through improved design and code.
         </SectionDescription>
 
-        <Button label="get resume">
-          <DownloadIcon />
-        </Button>
+        <CtaButton />
       </div>
     </div>
 
     <div
-      class="invisible xl:visible absolute bottom-0 mb-8 w-7 h-11 border-2 border-slate-400 dark:border-slate-600 rounded-2xl before:absolute before:content-[''] before:left-[10px] before:w-1 before:h-2 before:rounded before:bg-slate-400 dark:before:bg-slate-600 scroll"
+      class="invisible xl:visible absolute bottom-0 mb-8 w-7 h-11 border-2 border-gray-400 dark:border-gray-600 rounded-2xl before:absolute before:content-[''] before:left-[10px] before:w-1 before:h-2 before:rounded before:bg-gray-400 dark:before:bg-gray-600 scroll"
     ></div>
   </SectionWrapper>
 </template>

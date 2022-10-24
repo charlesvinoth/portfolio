@@ -1,4 +1,4 @@
-@import url("../assets/fonts/inter/stylesheet.css");
+@import url("../assets/fonts/outfit/stylesheet.css");
 
 @tailwind base;
 @tailwind components;
@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
 }
 
 .vel-modal {

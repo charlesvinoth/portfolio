@@ -10,7 +10,7 @@ const toggleTheme = store.toggleTheme;
 
 <template>
   <div
-    class="h-10 w-10 rounded-full bg-slate-100 dark:bg-slate-800 text-orange-400 dark:text-amber-200 cursor-pointer hover:bg-slate-200 dark:hover:bg-slate-700 relative overflow-hidden"
+    class="h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 text-orange-400 dark:text-amber-200 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-700 relative overflow-hidden"
     @click="toggleTheme"
   >
     <SunIcon class="h-6 w-6 absolute" :class="[darkTheme ? 'set' : 'rise']" />

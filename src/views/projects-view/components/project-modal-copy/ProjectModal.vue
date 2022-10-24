@@ -24,7 +24,7 @@ const closeModal = () => emit("update:modelValue", false);
 
 <template>
   <Teleport v-if="props.modelValue" to="body">
-    <div class="bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-50">
+    <div class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-50">
       <div class="container mx-auto">
         <div class="min-h-[100vh] p-6 xl:p-8">
           <BackButton @click="closeModal" />

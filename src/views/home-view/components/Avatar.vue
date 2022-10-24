@@ -3,13 +3,13 @@
 <template>
   <div class="w-72 md:w-80 h-72 md:h-80 relative">
     <div
-      class="w-full h-full rounded-full absolute bg-primary-500 dark:bg-primary-400 circle-1"
+      class="w-full h-full rounded-full absolute bg-primary-500 circle-1"
     ></div>
 
     <div class="w-full h-full rounded-full absolute circle-2"></div>
 
     <div
-      class="w-full h-full rounded-full absolute bg-secondary-500 dark:bg-secondary-400 circle-3"
+      class="w-full h-full rounded-full absolute bg-secondary-500 circle-3"
     ></div>
 
     <div class="w-full h-full rounded-full absolute circle-4"></div>

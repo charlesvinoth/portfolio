@@ -42,7 +42,7 @@ const showModal = (e) => {
     <img
       :src="coverImg"
       :alt="props.project.name"
-      class="p-3 border border-slate-200 dark:bg-slate-800"
+      class="p-3 border border-gray-200 dark:bg-gray-800"
     />
 
     <h2
@@ -51,7 +51,7 @@ const showModal = (e) => {
       {{ props.project.name }}
     </h2>
 
-    <p class="text-sm text-slate-500 dark:text-slate-400">
+    <p class="text-sm text-gray-500 dark:text-gray-400">
       {{ props.project.description.short }}
     </p>
   </div>

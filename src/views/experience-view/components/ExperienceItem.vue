@@ -39,7 +39,7 @@ const toggleRoles = () => emit("toggleRoles");
 
 <template>
   <div
-    class="pb-6 mb-6 border-b last:border-b-0 border-slate-200 dark:border-slate-800"
+    class="pb-6 mb-6 border-b last:border-b-0 border-gray-200 dark:border-gray-800"
   >
     <h2 class="text-lg md:text-md relative pl-12">
       <!-- toggle -->
@@ -48,10 +48,10 @@ const toggleRoles = () => emit("toggleRoles");
         class="absolute left-0 top-0 h-full flex items-center justify-center"
       >
         <div
-          class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 flex items-center justify-center cursor-pointer"
+          class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 flex items-center justify-center cursor-pointer"
           @click="toggleRoles"
         >
-          <div class="w-4 h-4 text-secondary-500 dark:text-secondary-500">
+          <div class="w-4 h-4 text-secondary-500">
             <ExpandIcon v-if="props.isCollapsed" />
             <CollapseIcon v-else />
           </div>
@@ -70,18 +70,14 @@ const toggleRoles = () => emit("toggleRoles");
 
       <!-- company -->
 
-      <span class="font-semibold text-secondary-500 dark:text-secondary-400">
-        @ {{ props.company }}
-      </span>
+      <span class="font-bold text-secondary-500"> @ {{ props.company }} </span>
 
       <!-- ... -->
     </h2>
 
     <!-- duration -->
 
-    <div
-      class="pl-12 capitalize text-slate-500 dark:text-slate-400 text-sm mt-1"
-    >
+    <div class="pl-12 capitalize text-gray-500 dark:text-gray-400 text-sm mt-1">
       {{ props.period }}
     </div>
 
@@ -95,9 +91,13 @@ const toggleRoles = () => emit("toggleRoles");
     >
       <ul
         ref="rolesRef"
-        class="mt-8 space-y-3 pl-12 list-disc list-inside marker:text-secondary-500 dark:marker:text-secondary-500 "
+        class="mt-8 space-y-3 pl-12 list-disc list-inside marker:text-secondary-500"
       >
-        <li v-for="role in props.roles" :key="role">
+        <li
+          v-for="role in props.roles"
+          :key="role"
+          class="text-gray-500 dark:text-gray-400"
+        >
           {{ role }}
         </li>
       </ul>

@@ -19,14 +19,12 @@ const logo = computed(
 </script>
 
 <template>
-  <div class="flex flex-col items-center">
-    <div
-      class="h-20 w-20 rounded flex items-center justify-center border border-slate-200 dark:border-slate-800"
-    >
-      <img :src="logo" :alt="props.label" class="w-9 h-auto" />
-    </div>
+  <div
+    class="h-28 w-28 flex flex-col items-center justify-center gap-4 rounded border border-gray-200 dark:border-gray-800"
+  >
+    <img :src="logo" :alt="props.label" class="w-10 h-auto" />
 
-    <div class="text-sm mt-2">
+    <div class="text-sm text-gray-500 dark:text-gray-400">
       {{ props.label }}
     </div>
   </div>

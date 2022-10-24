@@ -27,7 +27,7 @@ const setActiveMenu = (menu) => {
 
 <template>
   <div
-    class="h-10 w-10 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 cursor-pointer flex items-center justify-center"
+    class="h-10 w-10 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer flex items-center justify-center"
     @click="toggleMenus"
   >
     <CloseIcon v-if="showMenus" class="h-6 w-6" />
@@ -35,7 +35,7 @@ const setActiveMenu = (menu) => {
 
     <Teleport to="body">
       <div
-        class="fixed top-[88px] w-screen bg-white dark:bg-slate-900 transition-[right] duration-200 ease-linear"
+        class="fixed top-[88px] w-screen bg-white dark:bg-gray-900 transition-[right] duration-200 ease-linear"
         :class="[showMenus ? 'right-0' : 'right-[-110%]']"
         style="height: calc(100vh - 88px)"
       >
@@ -50,11 +50,11 @@ const setActiveMenu = (menu) => {
               <!-- menu -->
 
               <div
-                class="group-hover:text-slate-900 dark:group-hover:text-slate-50"
+                class="group-hover:text-gray-900 dark:group-hover:text-gray-50"
                 :class="[
                   activeMenu === menu
                     ? 'text-secondary-500 dark:text-secondary-500'
-                    : 'text-slate-500 dark:text-slate-400',
+                    : 'text-gray-500 dark:text-gray-400',
                 ]"
               >
                 {{ menu }}

@@ -62,7 +62,7 @@ const closeLightBox = () => emit("update:modelValue", false);
           <ZoomOutIcon class="h-5 w-5" />
         </ActionButton>
 
-        <div class="text-sm text-slate-50 mx-4">
+        <div class="text-sm text-gray-50 mx-4">
           {{ activeIdx + 1 }} of {{ screenshots.length }}
         </div>
 
