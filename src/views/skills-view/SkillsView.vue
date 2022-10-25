@@ -136,7 +136,7 @@ const skills = {
     <template v-for="(value, key) in skills" :key="key">
       <div class="text-lg capitalize font-semibold mb-6">{{ key }}</div>
 
-      <div class="flex flex-wrap items-center gap-4 mb-10">
+      <div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-10">
         <SkillItem
           v-for="skill in value"
           :key="skill.id"

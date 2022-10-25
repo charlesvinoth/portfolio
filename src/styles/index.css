@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root {
-  --primary: #4c36bd;
-  --secondary: #00ced4;
+  --primary: #9b3ba3;
+  --secondary: #00d4c9;
 }
 
 :root.dark {
-  --primary: #6754c7;
-  --secondary: #4ddde1;
+  --primary: #9b3ba3;
+  --secondary: #00d4c9;
 }
 
 html {

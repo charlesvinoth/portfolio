@@ -26,6 +26,8 @@ const project = computed(() =>
   store.projects.find((project) => project.id === props.projectId)
 );
 
+const openRepository = () => window.open(project.value.repository, "_blank");
+const openLink = () => window.open(project.value.link, "_blank");
 const goBack = () => router.back();
 </script>
 
@@ -35,8 +37,8 @@ const goBack = () => router.back();
       <BackButton class="" @click="goBack" />
 
       <div class="flex gap-3">
-        <RepositoryButton />
-        <LivePreviewButton />
+        <RepositoryButton v-if="project.repository" @click="openRepository" />
+        <LivePreviewButton v-if="project.link" @click="openLink" />
       </div>
     </div>
 
@@ -46,11 +48,11 @@ const goBack = () => router.back();
       project.description.long
     }}</SectionDescription>
 
-    <div class="text-lg capitalize font-bold mb-6">technologies used</div>
+    <div class="text-lg capitalize font-semibold mb-6">technologies used</div>
 
     <Technologies :technologies="project.technologies" class="mb-16" />
 
-    <div class="text-lg capitalize font-bold mb-6">screenshots</div>
+    <div class="text-lg capitalize font-semibold mb-6">screenshots</div>
 
     <Screenshots
       :project-name="project.name"

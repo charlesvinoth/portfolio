@@ -30,21 +30,21 @@ const iconMap = {
   <div class="flex items-center">
     <component
       :is="iconMap[props.type]"
-      class="mr-6 h-6 w-6 text-secondary-500 dark:text-secondary-400"
+      class="mr-6 h-6 w-6 text-primary-500"
     />
 
-    <div class="text-md font-medium">
+    <div class="font-medium">
       <a
         v-if="props.type === 'EMAIL'"
         :href="`mailto:${props.info}`"
-        class="'cursor-pointer hover:underline hover:text-secondary-500 dark:hoverdark:text-secondary-400'"
+        class="cursor-pointer hover:underline hover:text-secondary-500"
       >
         {{ props.info }}
       </a>
       <a
         v-else-if="props.type === 'PHONE'"
         :href="`tel:${props.info}`"
-        class="'cursor-pointer hover:underline hover:text-secondary-500 dark:hoverdark:text-secondary-400'"
+        class="cursor-pointer hover:underline hover:text-secondary-500"
       >
         {{ props.info }}
       </a>
@@ -52,7 +52,7 @@ const iconMap = {
         v-else-if="props.type === 'GITHUB'"
         :href="props.info"
         target="_blank"
-        class="'cursor-pointer hover:underline hover:text-secondary-500 dark:hoverdark:text-secondary-400'"
+        class="cursor-pointer hover:underline hover:text-secondary-500"
       >
         {{ props.info }}
       </a>

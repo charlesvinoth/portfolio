@@ -62,7 +62,7 @@ const toggleRoles = () => emit("toggleRoles");
 
       <!-- job title -->
 
-      <span class="capitalize font-bold">
+      <span class="capitalize font-semibold">
         {{ props.jobTitle }}
       </span>
 
@@ -70,7 +70,9 @@ const toggleRoles = () => emit("toggleRoles");
 
       <!-- company -->
 
-      <span class="font-bold text-secondary-500"> @ {{ props.company }} </span>
+      <span class="font-semibold text-secondary-500">
+        @ {{ props.company }}
+      </span>
 
       <!-- ... -->
     </h2>
